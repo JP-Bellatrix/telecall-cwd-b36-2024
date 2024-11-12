@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/36bff83eb7.js" crossorigin="anonymous"></script>
+    <!-- Font awesome cdnjs-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-c.css">
+
+    <title>Build Ink</title>
+</head>
+<body class="grey darken-4">
+    <!-- Header -->
+        <header class="">
+            <div class="navbar-fixed">
+                <nav class="black">
+                    <div class="container">
+                        <div class="nav-wrapper">
+                            <a href="#!" class="brand-logo brand-name">Build Ink</a>
+                            <a href="" class="sidenav-trigger" data-target="mobile-demo">
+                                <i class="fa-solid fa-bars"></i>
+                            </a>
+                            <div class="container"></div>
+                            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="#index.html">Home</a></li>
+                            <li><a href="#about.html">About Us</a></li>
+                            <li class="active grey darken-4"><a href="#connect.html">Connect</a></li>
+                            </ul>
+                            <br>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    <br><br><br>
+    
+
+    <!-- Main -->
+        <main class="grey darken-4">
+            <p class="center flow-text connect">
+                Thank you for your interest in connecting with us! 
+            </p>
+            <p class="center flow-text connect">We're dedicated to transforming architectural visions into reality and would love to hear from you.</p>
+            <h3 class="center connect-2">Let's bring your architectural dreams to life, together!</h3>
+            <section class="class="grey darken-4 contact-section">
+                <h1 class="center">Connect with Us</h1>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+
+    <!-- Sidenav -->
+    <ul id="mobile-demo" class="sidenav black">
+        <div class="container">
+            <li class=""><a href="#!" class="white-text"><i class="white-text fa-solid fa-book-open-reader"></i>Render Series</a></li>
+            <li><a href="#!" class="white-text"><i class="white-text fa-solid fa-newspaper"></i>ArchScopes</a></li>
+            <li><a href="#!" class="white-text"><i class="white-text fa-solid fa-chalkboard-user"></i>ArchTalks</a></li>
+            <li><a href="#!" class="white-text"><i class="white-text fa-solid fa-comments"></i>In-deep Talks</a></li>
+        </div>
+    </ul>
+
+
+    <div style="height: 55px;"></div>
+
+    <!-- Footer -->
+        <footer class="page-footer black">
+            <div class="container">
+                <div class="row">
+                    <div class="col 16 s4">
+                        <br>
+                        <ul>
+                            <li><a href="#" class="white-text"><i class="fa-brands fa-youtube"></i>  Youtube</a></li>
+                            <li><a href="#" class="white-text"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                            <li><a href="#" class="white-text"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    <div class="col 16 s5">
+                        <h5>Build Ink @ 2024</h5>
+                        <p class="">Featuring architectural plans, creative renderings, and up-to-date news, inspiring innovation in architectural design</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    <p>© All rights reserved. BuildInk 2024. 
+                    All images and videos are © each office/photographer/videographer mentioned.</p>
+                </div>
+            </div>
+        </footer>
+
+    
+
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+    // slider init
+        $(document).ready(function(){
+            $('.slider').slider({
+                indicators: false,
+                duration: 111,
+                interval: 2500
+            });
+            });
+    
+    // sidenav
+    $(document).ready(function(){
+            $('.sidenav').sidenav({
+                indicators: true,
+                edge:'left',
+                draggable: true,
+                inDuration: 555,
+                outDuration: 1000
+            });
+        });
+
+    // carousel
+    $(document).ready(function(){
+            $('.carousel').carousel({
+                duration: 250,
+                dist: -30,
+                shift: -10,
+                padding: 0,
+                numVisible: 6
+            });
+        });
+    </script>
+</body>
+</html>

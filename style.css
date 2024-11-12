@@ -1,0 +1,75 @@
+.brand-name {
+    font-family: ui-rounded;
+    font-weight: 250px;
+    color: white;
+}
+
+.brand-name-2 {
+    font-family: ui-rounded;
+    font-weight: 250px;
+    font-size: .9rem;
+    color: white;
+    
+}
+
+.stock-header {
+    position: sticky;
+    top: 0px;
+}
+
+    h1, h2, h3, h4, h5, p {
+        font-family: Georgia, sans-serif;
+        font-weight: 20px;
+        color: white;
+        font-stretch: expanded;
+        }
+
+.connect {
+    font-size: 1rem;
+}
+
+.connect-2 {
+    font-size: 2rem;
+}
+
+.submit-btn {
+    padding: 30px 60px;
+    background: #f6a387;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.stock-link {
+    font-weight: 120px;
+    font-size: .8rem;
+    
+}
+
+.stock-link-2 {
+    font-weight: 100px;
+    font-size: .7rem;
+    margin-left: auto;
+}
+
+.sidenav {
+    font-weight: 100px;
+    font-size: .7rem;
+    margin-left: auto;
+}
+
+.join-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: hwb(210 76% 14%);
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.join-btn:hover {
+    background: hwb(212 58% 20%);
+}
+
