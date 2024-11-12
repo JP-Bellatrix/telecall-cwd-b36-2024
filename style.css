@@ -69,7 +69,32 @@
     border-radius: 5px;
     transition: background 0.3s;
 }
+
 .join-btn:hover {
     background: hwb(212 58% 20%);
 }
 
+
+.read-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: hwb(0 100% 0%);
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.read-btn:hover {
+    background: hwb(212 58% 20%);
+}
+
+.card-stack {
+    padding: 30px 60px;
+    background: #f6a387;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
